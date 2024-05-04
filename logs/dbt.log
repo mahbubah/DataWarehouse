@@ -1,0 +1,31 @@
+[0m19:13:33.766053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf37f1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d357e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d371f0>]}
+
+
+============================== 19:13:33.789881 | 5d19cbff-1661-4f37-953a-b900a2d406c2 ==============================
+[0m19:13:33.789881 [info ] [MainThread]: Running with dbt=1.7.14
+[0m19:13:33.795605 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/mahbubah/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:13:33.799162 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/mahbubah/.dbt')}
+[0m19:13:33.802233 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:14:30.166156 [debug] [MainThread]: Starter project path: /home/mahbubah/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:14:30.192797 [info ] [MainThread]: 
+Your new dbt project "traffic_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:14:30.200165 [info ] [MainThread]: Setting up your profile.
+[0m19:16:13.753156 [info ] [MainThread]: Profile traffic_dbt written to /home/mahbubah/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:16:13.754586 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 160.26053, "process_user_time": 4.620676, "process_kernel_time": 0.265155, "process_mem_max_rss": "94348", "process_in_blocks": "16424", "process_out_blocks": "88"}
+[0m19:16:13.856867 [debug] [MainThread]: Command `dbt init` succeeded at 19:16:13.855607 after 160.36 seconds
+[0m19:16:13.860036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf37f1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d356f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d378e0>]}
+[0m19:16:13.864175 [debug] [MainThread]: Flushing usage events

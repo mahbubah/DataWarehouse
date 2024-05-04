@@ -8,7 +8,7 @@ import numpy as np
 # engine = create_engine('postgresql+psycopg2://airflow:airflow@192.168.1.100:8585/postgres')
 #engine = create_engine('postgresql+psycopg2://airflow:airflow@host.docker.internal:8585/postgres')
 
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5000/traffic')
+engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5432/traffic')
 
 VEHICLE_SCHEMA = "timed_vehicle_data_schema.sql"
 TRAJECTORIES_SCHEMA = "trajectory_schema.sql"
@@ -19,7 +19,7 @@ def create_table():
         with engine.connect() as conn:
             for name in [TRAJECTORIES_SCHEMA,VEHICLE_SCHEMA]:
                 
-                with open(f'/opt/pgsql/{name}', "r") as file:
+                with open(f'/opt/psql/{name}', "r") as file:
                     query = text(file.read())
                     conn.execute(query)
         print("Successfull")
