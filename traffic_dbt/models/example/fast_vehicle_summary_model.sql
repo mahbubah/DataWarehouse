@@ -1,6 +1,6 @@
 {{ config(materialzied='view')}}
 
-with fast_v as (select * from {{ref('fast_vehicles_model')}})
+with fast_v as (select * from {{ref('fast_vehicle_model')}})
 
 SELECT 
 type as "Vehicle type",

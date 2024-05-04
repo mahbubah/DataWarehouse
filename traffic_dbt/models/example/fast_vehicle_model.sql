@@ -9,7 +9,7 @@
 
 {{ config(materialized='view') }}
 
-with fast_vehicles as (
+with fast_vehicle as (
     SELECT *
     from trajectories 
     ORDER BY avg_speed DESC
@@ -17,7 +17,7 @@ with fast_vehicles as (
 )
 
 
-SELECT * FROM fast_vehicles
+SELECT * FROM fast_vehicle
 
 /*
     Uncomment the line below to remove records with null `id` values
