@@ -8,12 +8,12 @@ import numpy as np
 # engine = create_engine('postgresql+psycopg2://airflow:airflow@192.168.1.100:8585/postgres')
 #engine = create_engine('postgresql+psycopg2://airflow:airflow@host.docker.internal:8585/postgres')
 
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5432/traffic')
+engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5432/postgres')
 
 VEHICLE_SCHEMA = "timed_vehicle_data_schema.sql"
 TRAJECTORIES_SCHEMA = "trajectory_schema.sql"
 
-
+'''
 def create_table():
     try:
         with engine.connect() as conn:
@@ -26,7 +26,7 @@ def create_table():
     except Exception as e:
         print("Error creating table",e)
         sys.exit(e)
-
+'''
 
 # create_table()
 

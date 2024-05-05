@@ -1,6 +1,9 @@
+{{ config(materialzied='view')}}
 
--- Use the `ref` function to select from other models
+with top_speed as (select * from {{ref('timely_summary_model')}})
 
-select *
-from {{ ref('my_first_dbt_model') }}
-where id = 1
+SELECT 
+*
+from top_speed
+ORDER BY "lon_acc" ASC
+LIMIT(100)
