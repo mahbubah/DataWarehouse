@@ -29,3 +29,116 @@ Happy modeling!
 [0m19:16:13.856867 [debug] [MainThread]: Command `dbt init` succeeded at 19:16:13.855607 after 160.36 seconds
 [0m19:16:13.860036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf37f1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d356f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecbf3d378e0>]}
 [0m19:16:13.864175 [debug] [MainThread]: Flushing usage events
+[0m15:42:55.131610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x770129a01810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x770129f36e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x770129f378e0>]}
+
+
+============================== 15:42:55.154346 | dc30163f-7ed6-46a3-b6a1-1d55c6540b7b ==============================
+[0m15:42:55.154346 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:42:55.155353 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/mahbubah/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:05.717935 [debug] [MainThread]: Starter project path: /home/mahbubah/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m15:43:05.749405 [info ] [MainThread]: 
+Your new dbt project "traffic_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:43:05.750690 [info ] [MainThread]: Setting up your profile.
+[0m15:44:24.938699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab13ff9810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab14616a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab122b7880>]}
+
+
+============================== 15:44:24.942425 | 5b79a9da-2e08-4a2a-af7d-16ddf2c1f545 ==============================
+[0m15:44:24.942425 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:44:24.943768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/mahbubah/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:44:58.889071 [debug] [MainThread]: Starter project path: /home/mahbubah/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m15:44:58.969240 [info ] [MainThread]: 
+Your new dbt project "traffic_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:44:58.970970 [info ] [MainThread]: Setting up your profile.
+[0m15:45:58.454586 [info ] [MainThread]: Profile traffic_dbt written to /home/mahbubah/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:45:58.495353 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 93.62109, "process_user_time": 2.816265, "process_kernel_time": 0.139419, "process_mem_max_rss": "94748", "process_in_blocks": "392", "process_out_blocks": "88"}
+[0m15:45:58.496344 [debug] [MainThread]: Command `dbt init` succeeded at 15:45:58.496107 after 93.62 seconds
+[0m15:45:58.497234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab13ff9810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab122b7400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78ab122b5cc0>]}
+[0m15:45:58.498792 [debug] [MainThread]: Flushing usage events
+[0m15:46:18.570574 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:46:43.563541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3bc9f5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3bcd92950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3baa8b0a0>]}
+
+
+============================== 15:46:43.574479 | f72e45c8-a321-4418-a1ea-08b46d752eb6 ==============================
+[0m15:46:43.574479 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:46:43.578106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/mahbubah/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:43.580610 [info ] [MainThread]: dbt version: 1.7.14
+[0m15:46:43.582379 [info ] [MainThread]: python version: 3.10.12
+[0m15:46:43.583957 [info ] [MainThread]: python path: /usr/bin/python3
+[0m15:46:43.585343 [info ] [MainThread]: os info: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+[0m15:46:43.685596 [info ] [MainThread]: Using profiles dir at /home/mahbubah/.dbt
+[0m15:46:43.686932 [info ] [MainThread]: Using profiles.yml file at /home/mahbubah/.dbt/profiles.yml
+[0m15:46:43.688100 [info ] [MainThread]: Using dbt_project.yml file at /home/mahbubah/Desktop/DataWarehouse/dbt_project.yml
+[0m15:46:43.726912 [info ] [MainThread]: adapter type: postgres
+[0m15:46:43.728295 [info ] [MainThread]: adapter version: 1.7.14
+[0m15:46:43.729905 [info ] [MainThread]: Configuration:
+[0m15:46:43.731761 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:46:43.733178 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:46:43.734462 [info ] [MainThread]: Required dependencies:
+[0m15:46:43.735611 [debug] [MainThread]: Executing "git --help"
+[0m15:46:43.738973 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:46:43.740554 [debug] [MainThread]: STDERR: "b''"
+[0m15:46:43.741856 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:46:43.743180 [info ] [MainThread]: Connection:
+[0m15:46:43.744111 [info ] [MainThread]:   host: localhost
+[0m15:46:43.745176 [info ] [MainThread]:   port: 5432
+[0m15:46:43.746275 [info ] [MainThread]:   user: postgres
+[0m15:46:43.747274 [info ] [MainThread]:   database: traffic
+[0m15:46:43.748174 [info ] [MainThread]:   schema: schema
+[0m15:46:43.749204 [info ] [MainThread]:   connect_timeout: 10
+[0m15:46:43.750342 [info ] [MainThread]:   role: None
+[0m15:46:43.751942 [info ] [MainThread]:   search_path: None
+[0m15:46:43.753583 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:46:43.755100 [info ] [MainThread]:   sslmode: None
+[0m15:46:43.756527 [info ] [MainThread]:   sslcert: None
+[0m15:46:43.758464 [info ] [MainThread]:   sslkey: None
+[0m15:46:43.760864 [info ] [MainThread]:   sslrootcert: None
+[0m15:46:43.762641 [info ] [MainThread]:   application_name: dbt
+[0m15:46:43.763817 [info ] [MainThread]:   retries: 1
+[0m15:46:43.764779 [info ] [MainThread]: Registered adapter: postgres=1.7.14
+[0m15:46:43.766162 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:46:43.766855 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:46:43.767424 [debug] [MainThread]: On debug: select 1 as id
+[0m15:46:43.768003 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:46:48.540106 [debug] [MainThread]: SQL status: SELECT 1 in 5.0 seconds
+[0m15:46:48.542515 [debug] [MainThread]: On debug: Close
+[0m15:46:48.543732 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:46:48.545308 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:46:48.546861 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/mahbubah/Desktop/DataWarehouse/dbt_project.yml> not found
+
+[0m15:46:48.548962 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 5.0785403, "process_user_time": 3.473262, "process_kernel_time": 0.148451, "process_mem_max_rss": "97556", "process_in_blocks": "3976", "process_out_blocks": "16", "command_success": false}
+[0m15:46:48.550252 [debug] [MainThread]: Command `dbt debug` failed at 15:46:48.549786 after 5.08 seconds
+[0m15:46:48.551654 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:46:48.553075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3bc9f5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3ba545cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ef3ba544160>]}
+[0m15:46:48.554135 [debug] [MainThread]: Flushing usage events
+[0m15:47:08.574990 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

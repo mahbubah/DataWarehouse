@@ -9,7 +9,7 @@ from airflow.operators.bash_operator import BashOperator
 # We're hardcoding this value here for the purpose of the demo, but in a production environment this
 # would probably come from a config file and/or environment variables!
 DBT_PROJECT_DIR = "../../opt/traffic_dbt"
-DBT_PROFILE_DIR = "../../opt/traffic_dbt/"
+DBT_PROFILE_DIR = "/home/mahbubah/.dbt"
 
 #"/home/mahbubah/Desktop/DataWarehouse/traffic_dbt"
 

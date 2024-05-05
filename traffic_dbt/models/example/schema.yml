@@ -2,20 +2,24 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+  - name: fast_vehicle_model
+    description: "Query fast vehicles"
+    
+  - name: vehicle_summary_model
+    description: "A summary of vehicles by distance and speed"
+  
+  - name: fast_vehicle_summary_model
+    description: "A summary of vehicles by distance and speed"
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+  - name: timely_summary_model
+    description: "A summary of vehicles by speed"
+
+  - name: speed_timely_summary_model
+    description: "A summary of vehicles by distance and speed"
+
+  - name: lat_timely_summary_model
+    description: "A summary of vehicles by distance and speed"
+
+  - name: lon_timely_summary_model
+    description: "A summary of vehicles by distance and speed"
+

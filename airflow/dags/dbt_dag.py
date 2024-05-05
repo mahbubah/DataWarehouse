@@ -2,11 +2,11 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
 
-DBT_PROFILE_DIR = "/home/mahbubah/Desktop/DataWarehouse/traffic_dbt"
+DBT_PROFILE_DIR = "/home/mahbubah/.dbt/"
 
 # Define default arguments for the DAG
 default_args = {
-    'owner': 'airflow',
+    'owner': 'mahbubah',
     'depends_on_past': False,
     'start_date': datetime(2024, 5, 1),
     'email_on_failure': False,
@@ -24,7 +24,7 @@ dag = DAG(
 )
 
 # Define the dbt run command
-dbt_run_command = "dbt run --profiles-dir {DBT_PROJECT_DIR} --target target"
+dbt_run_command = "dbt run --profiles-dir {DBT_PROJECT_DIR} --target dev"
 dbt_run_task = BashOperator(
     task_id='dbt_run_task',
     bash_command=dbt_run_command,
@@ -32,7 +32,7 @@ dbt_run_task = BashOperator(
 )
 
 # Define the dbt test command
-dbt_test_command = "dbt test --profiles-dir {DBT_PROJECT_DIR}  --target target"
+dbt_test_command = "dbt test --profiles-dir {DBT_PROJECT_DIR}  --target dev"
 dbt_test_task = BashOperator(
     task_id='dbt_test_task',
     bash_command=dbt_test_command,
